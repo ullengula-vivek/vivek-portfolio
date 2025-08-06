@@ -1,0 +1,254 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+  padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #cbd5e1, #f1f5f9);
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #334155;
+}
+
+.btn {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #e2e8f0;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.card p {
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-section button {
+  align-self: center;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+    display: none; /* for JS toggle */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
