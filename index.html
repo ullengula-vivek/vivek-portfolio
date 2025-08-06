@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Vivek Ullengula" />
+  <meta name="description" content="Vivek's personal portfolio website" />
+  <title>Vivek | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Vivek</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/Vivek_Resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Hi, I'm Vivek 👋</h2>
+        <p>I build responsive and modern websites using HTML, CSS, and JavaScript.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>
+        I'm a beginner web developer passionate about building clean and user-friendly websites.
+        I specialize in front-end development and enjoy learning new technologies like LLMs.
+      </p>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <img src="assets/project1.png" alt="Project 1 Screenshot" />
+          <h3>Personal Portfolio</h3>
+          <p>A modern and mobile-friendly personal portfolio site.</p>
+          <a href="https://yourproject1.live" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+          <img src="assets/project2.png" alt="Project 2 Screenshot" />
+          <h3>Landing Page Design</h3>
+          <p>Responsive landing page built with HTML, CSS, and JS.</p>
+          <a href="https://yourproject2.live" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/{your_id}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vivek. Built with ❤️ using HTML, CSS, and JavaScript.</p>
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://www.fiverr.com/yourprofile" target="_blank">Fiverr</a>
+    </div>
+  </footer>
+</body>
+
+</html>
